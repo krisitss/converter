@@ -16,4 +16,10 @@ def convertKMtoMI():
     else: 
         print("Nederīga vērtība")
 
-convertKMtoMI()
+def convertEURtoUSD():
+    eur = float(input("Ievadi EUR:"))
+    if eur>0:
+        usd = round(eur*1.17, 2)
+        print(f"Rezultāts ir {usd} dolāri")
+    else:
+        print("Nederīga vērtība")
