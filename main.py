@@ -16,6 +16,7 @@ def convertKMtoMI():
     else: 
         print("Nederīga vērtība")
 
+# converts eur to usd
 def convertEURtoUSD():
     eur = float(input("Ievadi EUR:"))
     if eur>0:
@@ -23,3 +24,14 @@ def convertEURtoUSD():
         print(f"Rezultāts ir {usd} dolāri")
     else:
         print("Nederīga vērtība")
+
+# converts area
+def convertArea():
+    square_m = float(input("Ievadi m^2:"))
+    if square_m>0:
+        ha = square_m / 10000
+        print(f"{square_m} m^2 ir {ha} hektāri")
+    else:
+        print("Nederīga vērtība")
+
+convertArea()
